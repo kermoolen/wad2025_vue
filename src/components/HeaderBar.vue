@@ -13,7 +13,7 @@ export default {
         <router-link to="/signup">Signup</router-link>
       </nav>
       <div class="nav-right">
-        <a href="login.html"><img src="res/images/default_avatar.jpg" alt="Avatar" class="avatar-img"></a>
+        <a href="login.html"><img src="/images/default_avatar.jpg" alt="Avatar" class="avatar-img"></a>
       </div>
     </div>
   </header>

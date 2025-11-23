@@ -13,10 +13,7 @@ export default {
 
 <template>
   <div>
-    <HeaderBar/>
-
-
-    <FooterBar/>
+   
   </div>
 </template>
 
