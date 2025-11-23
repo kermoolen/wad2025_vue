@@ -81,12 +81,89 @@ export default {
             </ul>
           </div>
         </div>
-        <button type="submit">Signup</button>
+        <button type="submit">Sign Up</button>
       </form>
     </main>
   </div>
 </template>
 
 <style scoped>
+.signup-view {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
 
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.password-validation {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: -0.5rem;
+}
+
+.password-valid {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.invalid-feedback {
+  color: #d32f2f;
+}
+
+.invalid-feedback strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.invalid-feedback ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.invalid-feedback li {
+  margin-bottom: 0.25rem;
+}
 </style>
