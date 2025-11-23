@@ -1,14 +1,8 @@
 <script>
-import HeaderBar from "@/components/HeaderBar.vue";
-import FooterBar from "@/components/FooterBar.vue";
 import {computed, ref, watch} from "vue";
 
 export default {
   name: "SignUpView",
-  components: {
-    HeaderBar,
-    FooterBar,
-  },
   setup(){
     const email = ref('');
     const password = ref('');
@@ -64,7 +58,6 @@ export default {
 
 <template>
   <div>
-    <HeaderBar/>
     <main class="container signup-view">
       <form class="signup-form" @submit.prevent="onSubmit">
         <label>
@@ -91,7 +84,6 @@ export default {
         <button type="submit">Signup</button>
       </form>
     </main>
-    <FooterBar/>
   </div>
 </template>
 
